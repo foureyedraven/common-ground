@@ -1,0 +1,200 @@
+$body-background: #04052c;
+$header-font-family: "Ubuntu" Helvetica, Arial, sans-serif;
+$h1-font-size: em-calc(55);
+$h2-font-size: em-calc(48);
+$h3-font-size: em-calc(40);
+$h4-font-size: em-calc(23);
+$h5-font-size: em-calc(18);
+$h6-font-size: em-calc(22);
+$paragraph-font-size: em-calc(22);
+$topbar-background: #FFF;
+$header-font-color: #222;
+$header-font-weight: 700;
+$header-font-size: 5em;
+$body-font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+
+
+.splash {
+  background-image: image-url("space-long.jpeg");
+  background-size: 100%;
+  background-attachment: scroll;
+  background-position: right 17em;
+  background-repeat: no-repeat;
+}
+
+nav.top-bar {
+  
+//  height: 4.1em;
+  h2 {
+    line-height: 1;
+  }
+}
+
+.banner {
+  padding: 2.5em;
+  text-align: center !important;
+  background-color: #052a4d;
+  h1 {
+    line-height: 1;
+    font-weight:heavy;
+    color: #fff;
+    font-family: 'Droid Serif', serif;
+    margin-bottom:0.2em;
+    }
+  h3 {
+    line-height: 1.2;
+    font-weight:normal;
+    color: #efefef;
+    font-family: 'Droid Serif', serif;
+    margin: 0.2em 0 0.2em 0;
+  }
+}
+
+.button.custom {
+  background-color:transparent;
+  border-width: 0.1875em;
+  border-radius: 0.25em;
+  border-color: #fff;
+  margin: 0.75em 1em 0 1em;
+  font-weight: 500;
+}
+
+div.row {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.custom {
+  background-color: #fff;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+  margin-top: 3em;
+  margin-color: transparent;
+}
+
+.nav.banner {
+  background-color: #fff;
+  text-align: center !important;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0;
+  h3 {
+    font-weight: 700;
+    color: #222;
+    font-family: inherit;
+    margin:0.1em 0 0.2em 0;
+  }
+  p {
+    line-height:1.4;
+    font-weight:500;
+    font-family: inherit;
+    margin:0 0;
+    padding: 0;
+  }
+}
+
+.info {
+  background-color:#ffffff88;
+  padding: 0 1em 0 1em;
+  h3 {
+    color: white;
+  }
+  p {
+    //color: #20124d;
+    //font-family:"Droid serif", serif;
+  }
+}
+
+i.fa {
+  font-size:3em;
+  color:#052a4d;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+i.o {
+  color:#fff;
+  font-size:5em;
+}
+
+i.sm {
+  font-size: 1em;
+  color:#fff;
+}
+
+
+.accordion-item.custom {
+  padding:0.1rem 0.2rem;
+}
+.accordion-content.custom {
+  
+}
+.accordion-title.custom {
+  font-size:1.5rem;
+  font-color: #052a4d;
+  font-weight:500;
+  border: 3px dashed grey;
+  padding:0.5rem 0.5rem;
+}
+
+.accordion-title.custom::before {
+  margin-top: -1rem;
+}
+
+.grades {
+  padding: 0.4em;
+  margin: 0.2em;
+  border-style:dashed;
+  border-color:grey;
+  h3 {
+    color:#052a4d;
+  }
+}
+footer {
+  background-color: #052a4d;
+  font-family: 'Ubuntu', sans-serif; 
+  text-align: center !important;
+  line-height:1;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}
+
+// Minor details
+
+.lg-break {display: inline;}
+.md-break {display: block;}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .lg-break {display: block; }}
+@media screen and (min-width: 640px)
+{.md-break { display: inline; }}
+
+// Media Queries
+@media screen and (min-width: 768) {
+  .splash {
+    //  background-image: image-url("space-long.jpeg");
+    //  background-size: 100%;
+    //  background-attachment: scroll;
+    //  background-position: right 25em;
+     // background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  div.column {
+  width: 50%;
+  position:relative;
+  }
+  body {
+    font-size:90%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  div.column {
+  width: 100%;
+  position:relative;
+}
+body {
+    font-size:60%;
+  }
+}

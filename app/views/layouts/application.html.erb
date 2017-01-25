@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>CommonGround</title>
-    <%= csrf_meta_tags %>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title><%= full_title(yield(:title)) %></title>
+    
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
+    <nav class="top-bar">
+      <div>
+        <h2 class="text-center"><a href="/">commonground</a></h2>
+      </div>
+    </nav>
+    
     <%= yield %>
+    <footer>
+        All content is free for you to use.  Please share! <i class="fa sm fa-pinterest"></i> <i class="fa sm fa-facebook"></i> <i class="fa sm fa-youtube"></i> Copyright Common Ground Education
+    </footer>
   </body>
 </html>
