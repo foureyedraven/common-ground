@@ -99,10 +99,16 @@ div.row {
   padding: 0 1em 0 1em;
   h3 {
     color: white;
+    display:inline;
   }
   p {
-    //color: #20124d;
-    //font-family:"Droid serif", serif;
+    color:black;
+    line-height:1.4;
+    font-weight:500;
+    font-family: inherit;
+    margin:0 0;
+    padding: 0;
+    display:inline;
   }
 }
 
