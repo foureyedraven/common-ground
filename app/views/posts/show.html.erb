@@ -1,0 +1,12 @@
+<div class="row custom">
+  <div class="post">
+    <h3><%= @post.title %></h3>
+    <p class="meta">Written by <%= @post.author_name %> on <%= @post.published_at.to_date.to_formatted_s :long_ordinal %></p>
+    <div class="post-body">
+      <%= @post.body.html_safe %>
+    </div>
+  </div>
+  <div class="mailing">
+    <p>Enjoying these posts? Get updates in your inbox by signing up for our email list</p>
+  </div>
+</div>

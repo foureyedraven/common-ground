@@ -5,15 +5,17 @@ gem 'puma',         '3.4.0'
 gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.0.0'
 gem 'coffee-rails', '4.2.1'
-gem 'jquery-rails', '4.1.1'
-gem 'jquery-turbolinks', '2.1'
 gem 'turbolinks',   '5.0.1'
+gem 'jquery-rails', '4.1.1'
 gem 'jbuilder',     '2.4.1'
 gem 'foundation-rails', '6.2'
 gem 'font-awesome-sass', '4.7.0'
+gem 'pg', '0.18.4'
+gem 'simple_form', '~> 3.4'
+# blog plugin
+gem 'commonsource', path: '../commonsource/'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.12'
   gem 'byebug',  '9.0.0', platform: :mri
 end
 
@@ -32,5 +34,5 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.18.4'
+
 end

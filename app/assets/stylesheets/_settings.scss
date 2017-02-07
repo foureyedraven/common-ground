@@ -148,7 +148,7 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
-$blockquote-color: $dark-gray;
+$blockquote-color: $white;
 $blockquote-padding: rem-calc(9 20 0 19);
 $blockquote-border: 1px solid $medium-gray;
 $cite-font-size: rem-calc(13);
@@ -192,7 +192,7 @@ $accordion-item-color: foreground($accordion-background, #052a4d);
 $accordion-item-background-hover: transparent;
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
-$accordion-content-border: none;//1px solid $light-gray;
+$accordion-content-border: 1px solid $light-gray;
 $accordion-content-color: foreground($accordion-background, #052a4d);
 $accordion-content-padding: 1rem;
 

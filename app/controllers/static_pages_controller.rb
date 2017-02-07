@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    @postlets = BlogPost.published.order('id desc').limit(5)
   end
 
   def math

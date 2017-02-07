@@ -37,25 +37,73 @@
         <span class="lg-break">Why </span>
         <span class="lg-break">donate?</span>
       </h3>
-      <p style="color:grey">Find out how $5 creates more helpful tools for your student</p>
+      <p style="color:grey">Find out how $5 creates more helpful tools for your student and your community</p>
       <i class="fa fa-child"></i>
     </div>
   </div>
 </div>
-<section style="padding:5em">
+<section style="padding:3em">
 </section>  
 </div>
+
 <div class="row">
-  <div class="info">
-    <h3>What is commonground?</h3>
-    <p>
-This is a community supported library of simplified and well-rounded middle school lessons tailored to students who feel lost or uninspired. 
-The goal here is for students to gain confidence and realize that they can learn anything!
-Commonground strives to bridge the gap between these natural and necessary skills our future leaders need and the concepts required in school. 
-    <p>
+  <div class="inspo">
+    <h2>Simple yet in-depth lessons</h2>
+    <h2>that build lifelong confidence</h2>
+  </div>
+  <section style="padding:3em">
+  </section>  
+</div>
+
+<div class="row custom">
+  <div class="small-4 column"></br>
+    <h4>Welcome to commonground</h4><p>
+      This is a community-supported and free-to-use tutoring platform. <b>How does it work?</b></br></br>
+      Many students get stuck in school because each concept seems complicated and their confidence
+      has been through the ringer. They don't believe they have any natural talent in math or science. </br></br>
+      All students have natural talent. The lessons here reach students by explaining core concepts in language they can understand, 
+      and through stories and activities that stimulate problem solving, encourage pattern discovery, and build confidence brick by brick. </br></br>
+    </p>
+  </div>
+  <div class="small-4 column"></br>
+    <h4>Get started</h4><p>
+      <b>To begin,</b> simply find the subject and topic your student is working on. Your student will explore videos
+      and activities that break down what they need to know and do for that topic. This causes
+      your student to think 'that's it?' and 'this is easier than I thought' because, well, it really is. </br></br>
+      <b>Is this homework help?</b></br>
+      Yes and no. Yes because the topics taught here follow Common Core and other standards, and no because we focus on the basic idea behind, 
+      for example, linear equations. That way every lesson on a topic won't seem like another layer of complication,
+      but instead as more fun puzzles to solve.</br></br>
+    </p>
+  </div>
+  <div class="small-4 column"></br>
+    <h4>Please consider donating</h4><p>
+      I believe that all students deserve the opportunity to be great in basic academic subjects. </br></br>
+      These resources are free and ad-less because confidence and knowledge are priceless. However, if you're able, please consider donating to
+      this mission of building confidence and STEM skills in all middle schoolers. Your generosity will have a huge impact on expanding resources and tools for all students. </br></br>
+      Check out my Patreon page, which allows you to make small (or large) ongoing or one-time donations. Thank you!
+    </p>
   </div>
 </div>
-<div>
+
+<div class="row">
+  <div class="inspo">
+    <blockquote>You turned hours of class into a two minute explanation. <h6>James, 8th grade</h6></blockquote>
+    <blockquote style="float:right">Algebra is easy once you get it. It's like a puzzle. <h6>Jackson, 9th grade</h6></blockquote>
+  </div>
+</div>
+
+<div class="row dark">
+  <div class="blog">
+    <h2>Blog</h2>
+      <ul class="postlets">
+      <% @postlets.each do |post| %>
+        <li>
+          <%= render post %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
 
 </body>
