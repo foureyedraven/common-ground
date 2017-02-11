@@ -12,6 +12,7 @@ gem 'foundation-rails', '6.2'
 gem 'font-awesome-sass', '4.7.0'
 gem 'pg', '0.18.4'
 gem 'simple_form', '~> 3.4'
+gem 'paperclip', '~> 5'
 # blog plugin
 gem 'commonsource', path: '../commonsource/'
 
