@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170211012431) do
+ActiveRecord::Schema.define(version: 20170211233058) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,4 +41,24 @@ ActiveRecord::Schema.define(version: 20170211012431) do
     t.index ["search_data"], name: "idx_search_data", using: :gin
   end
 
+  create_table "commonsource_galleries", force: :cascade do |t|
+    t.integer  "commonsource_entry_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.index ["commonsource_entry_id"], name: "index_commonsource_galleries_on_commonsource_entry_id", using: :btree
+  end
+
+  create_table "commonsource_images", force: :cascade do |t|
+    t.integer  "commonsource_gallery_id"
+    t.string   "paperclip_file_name"
+    t.string   "paperclip_content_type"
+    t.integer  "paperclip_file_size"
+    t.datetime "paperclip_updated_at"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.index ["commonsource_gallery_id"], name: "index_commonsource_images_on_commonsource_gallery_id", using: :btree
+  end
+
+  add_foreign_key "commonsource_galleries", "commonsource_entries"
+  add_foreign_key "commonsource_images", "commonsource_galleries"
 end
